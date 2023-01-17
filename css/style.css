@@ -1,0 +1,232 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    background-color: rgb(240, 240, 240);
+    color: black;
+}
+
+/*global*/
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+img{
+  width: 500px;
+  height: 350px;
+  border: 1px solid rgba(218, 217, 217, 0.411);
+  border-radius: 2px;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+/*header*/
+header{
+    background: #929292;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #423d86 3px solid;
+    
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header .current a{
+  color: #c6b7c9;
+  font-weight: bold;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color: #271b5c;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #434d0d;
+    font-weight: bold;
+}
+
+  /*sidebar*/
+  aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+    background-color: rgb(223, 219, 219);
+    border: #ffffff;
+    display: inline;
+  }
+
+  aside#sidebar img{
+    width: 30%;
+    height: 100px;
+    border: #ccc solid 1px;
+    border-radius: 50px;
+    float: left;
+    margin-top: 10px;
+    padding: 0;
+    display: block;
+  }
+
+  aside#sidebar a:hover{
+    color: #962222;
+    font-weight: bold;
+}
+
+ 
+
+  aside#sidebar nav a:hover{
+    color: #962222;
+    font-weight: bold;
+}
+
+aside#sidebar nav h5{
+  text-align: left;
+  margin-left: 100px;
+  float: left;
+    margin-top: 36px;
+    margin-bottom: 17px;
+    margin-left: 20px;
+    width: 50%;
+    font-size: 20px;
+}
+
+  aside#sidebar h3{
+    float: left;
+    margin-top: 28px;
+    margin-bottom: 7px;
+    margin-left: 16px;
+    width: 50%;
+  }
+
+  aside#sidebar h4{
+    float: left;
+    margin-top: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    line-height: 1.5em;
+  }
+
+  aside#sidebar h2{
+    float: left;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    line-height: 1.5em;
+  }
+  
+  aside#sidebar a{
+    float: left;
+    display: inline;
+    margin-left: 16px;
+  }
+
+
+  aside#sidebar li{
+    float: left;
+    display: inline;
+    padding: 0 0 0 40px;
+}
+
+aside#sidebar .menu{
+  padding: 10px;
+  line-height: 1.5em;
+  margin-left: -18px;
+
+}
+
+/*section*/
+section#maincol{
+  float: left;
+    width: 69%;
+    background-color: rgb(223, 219, 219);
+    border: #ffffff;
+    margin-top: 10px;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+  /*footer*/
+  footer{
+    background-color: rgb(216, 212, 212);
+    text-align: center;
+    padding: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+    width: 100%;
+    min-height: 50px;
+    
+  }
+
+  footer h2{
+    color: rgb(57, 22, 80);
+  }
+
+  footer h4{
+    color: rgb(54, 45, 45);
+  }
+
+  @media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    section#maincol,
+    aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header{
+      padding-bottom: 20px;
+  }
+}
